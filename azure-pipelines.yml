@@ -1,6 +1,6 @@
 variables:
   
-  - group: captureorder-vars # Variable Group containing 'mongoHost', 'mongoUser' and the secret 'mongoPassword'
+  - group: capture-order-vars # Variable Group containing 'mongoHost', 'mongoUser' and the secret 'mongoPassword'
 
   - name: dockerRegistryServiceConnection
     value: 'khcommon' # make sure it matches the name you used in the service connection
