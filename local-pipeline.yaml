@@ -13,8 +13,9 @@ steps:
 - task: Docker@2
   inputs:
     command: 'build'
+    repository: captureorder
     Dockerfile: '**/Dockerfile'
-    tags: captureorder
+    tags: local1
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
