@@ -4,8 +4,6 @@
 
 # a single-job build you can omit the containers for stages and jobs 
 
-displayName: NUC3-build
-
 pool:
   name: home
 
