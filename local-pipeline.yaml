@@ -16,7 +16,13 @@ steps:
     repository: captureorder
     Dockerfile: '**/Dockerfile'
     tags: local1
-
+- task: KubernetesManifest@0
+  inputs:
+    action: 'deploy'
+    kubernetesServiceConnection: 'local-dev-dev-1579599256100'
+    namespace: 'dev'
+    containers: captureorder:$(tagVariable)
+    manifests: manifests/deployment.yaml
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
