@@ -21,7 +21,7 @@ steps:
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
-    kubernetesServiceConnection: ''
+    kubernetesServiceConnection: 'local-dev-default-1579605890385'
     namespace: 'default'
 #    containers: captureorder:$(tagVariable)
     manifests: manifests/deployment.yaml
